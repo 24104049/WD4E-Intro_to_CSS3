@@ -19,6 +19,16 @@ header h1 {
     color: #ffffff;
 }
 
+/* Header image */
+header > img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+
 nav {
     display: inline-block;
     width: 80%;
