@@ -24,14 +24,14 @@ nav {
     width: 80%;
 }
 
+/* Homework 2 - image in navigation */
 nav img {
     width: 10%;
 }
 
-/* Existing li styling from Homework 1 is commented out */
-
+/* Commented out the old li styling */
 /*
-li {
+nav li {
     display: inline-block;
     width: 150px;
     margin: 5px;
@@ -42,6 +42,12 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+/* Navigation items displayed horizontally */
+nav li {
+    display: inline-block;
+    margin: 5px;
 }
 
 nav a {
@@ -68,8 +74,7 @@ main img {
     border-radius: 12px;
 }
 
-/* Grid layout */
-
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: 40% 40%;
@@ -78,12 +83,12 @@ main img {
     row-gap: 30px;
 }
 
+/* Only images inside grid */
 .grid img {
     width: 100%;
 }
 
-/* Flex layout */
-
+/* FLEX */
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -96,8 +101,7 @@ main img {
     height: auto;
 }
 
-/* Skip to Main Content */
-
+/* SKIP TO MAIN CONTENT */
 .skip-link {
     position: absolute;
     top: -50px;
