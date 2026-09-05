@@ -1,1 +1,652 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background-color: #fff;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    background-color: #304f91;
+    height: 54px;
+    color: white;
+}
+
+.top-menu {
+    max-width: 1320px;
+    height: 54px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.top-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 0 14px;
+    border-right: 1px solid rgba(255,255,255,0.7);
+}
+
+.top-menu a:hover {
+    color: #ff6b32;
+}
+
+.space {
+    flex: 1;
+}
+
+.flag {
+    font-size: 21px;
+    margin-left: 10px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: white;
+    height: 116px;
+}
+
+.header-container {
+    max-width: 1320px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 360px;
+    position: relative;
+}
+
+.logo-main {
+    color: #263f7e;
+    font-family: Georgia, serif;
+    font-size: 31px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-sub {
+    color: #263f7e;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+    margin-left: 48px;
+    margin-top: -5px;
+}
+
+
+/* NAV */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    flex: 1;
+}
+
+nav a {
+    color: #102b62;
+    text-decoration: none;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #f15a24;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.breadcrumb {
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 17px;
+}
+
+.breadcrumb a {
+    color: #111;
+    text-decoration: none;
+}
+
+.orange {
+    color: #f36b2c;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    display: grid;
+    grid-template-columns: 2.4fr 1fr;
+    gap: 38px;
+}
+
+.main-content {
+    min-width: 0;
+}
+
+.title-line {
+    border-bottom: 3px solid #e6e6e6;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.title-line::after {
+    content: "";
+
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+
+    width: 86px;
+    height: 3px;
+
+    background-color: #f15a24;
+}
+
+.title-line h1,
+.title-line h2 {
+    margin: 0 0 11px 0;
+
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.title-line h2 {
+    font-size: 30px;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    height: 505px;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            120deg,
+            #159ee9 0%,
+            #0968e9 45%,
+            #17167f 100%
+        );
+
+    color: white;
+}
+
+.banner::before {
+    content: "";
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+
+    right: -120px;
+    top: 30px;
+
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+}
+
+.banner-text {
+    position: absolute;
+    left: 55px;
+    top: 65px;
+
+    z-index: 2;
+}
+
+.banner-text h2 {
+    margin: 0;
+
+    font-size: 43px;
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.banner-text h3 {
+    margin: 12px 0 40px;
+
+    font-size: 31px;
+}
+
+.banner-box {
+    width: 440px;
+    min-height: 125px;
+
+    background-color: rgba(65,174,245,0.8);
+
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 25px;
+}
+
+.banner-box span {
+    font-size: 55px;
+    margin-right: 20px;
+}
+
+.banner-box strong {
+    font-size: 22px;
+}
+
+.banner-box p {
+    margin: 8px 0 0;
+    font-size: 17px;
+}
+
+.student {
+    position: absolute;
+
+    right: 70px;
+    bottom: 20px;
+
+    font-size: 190px;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.date {
+    background: #f2f0ef;
+
+    padding: 23px 35px;
+
+    color: #f15a24;
+
+    font-size: 16px;
+
+    border-left: 4px solid #f15a24;
+}
+
+.date span {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+
+/* =========================
+   ARTICLE
+========================= */
+
+article {
+    padding: 25px 20px 50px;
+}
+
+article h2 {
+    color: #1c3974;
+    font-size: 28px;
+}
+
+article h3 {
+    color: #1c3974;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+article p,
+article li {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+article ol {
+    padding-left: 25px;
+}
+
+
+/* =========================
+   INFO BOX
+========================= */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.info-box {
+    background-color: #f3f3f3;
+
+    border-left: 5px solid #f15a24;
+
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box strong {
+    color: #1d4388;
+    font-size: 30px;
+}
+
+.info-box span {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category-list a {
+    text-decoration: none;
+
+    color: #292929;
+
+    background-color: #f0eeee;
+
+    padding: 13px 18px;
+
+    font-size: 17px;
+
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+}
+
+.category-list a:hover {
+    background-color: #f15a24;
+    color: white;
+}
+
+.category-list .active {
+    background-color: #f36b2c;
+    color: white;
+}
+
+.category-list .sub {
+    margin-left: 30px;
+    background-color: #f0eeee;
+}
+
+
+/* =========================
+   CHAT
+========================= */
+
+.chat-message {
+    position: fixed;
+
+    left: 25px;
+    bottom: 88px;
+
+    width: 365px;
+
+    background-color: white;
+
+    padding: 22px;
+
+    border-radius: 28px;
+
+    box-shadow: 0 2px 20px rgba(0,0,0,0.12);
+
+    z-index: 20;
+}
+
+.chat-message button {
+    position: absolute;
+
+    right: -3px;
+    top: -15px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #666;
+    color: white;
+
+    font-size: 23px;
+}
+
+.chat-message strong {
+    font-size: 17px;
+}
+
+.chat-message p {
+    color: #667085;
+    margin-bottom: 0;
+}
+
+.chat-icon {
+    position: fixed;
+
+    left: 27px;
+    bottom: 10px;
+
+    width: 73px;
+    height: 73px;
+
+    background-color: #2766c7;
+
+    border: 5px solid white;
+
+    border-radius: 50%;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 35px;
+
+    z-index: 20;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #1f3d78;
+    color: white;
+
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1320px;
+    margin: auto;
+
+    padding: 45px 0;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-container h3 {
+    margin-top: 0;
+}
+
+.footer-container p {
+    color: #e5e8ef;
+    line-height: 1.6;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    text-align: center;
+
+    padding: 18px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .top-menu {
+        padding: 0 15px;
+        overflow: hidden;
+    }
+
+    .header-container {
+        padding: 0 20px;
+    }
+
+    .logo {
+        width: 230px;
+    }
+
+    nav {
+        gap: 12px;
+        overflow: hidden;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .student {
+        right: 20px;
+        font-size: 130px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .top-bar {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        padding: 25px 0;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-sub {
+        margin-left: 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .banner-text {
+        left: 25px;
+        top: 40px;
+    }
+
+    .banner-text h2 {
+        font-size: 28px;
+    }
+
+    .banner-text h3 {
+        font-size: 22px;
+    }
+
+    .banner-box {
+        width: 300px;
+    }
+
+    .student {
+        font-size: 90px;
+        right: 15px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chat-message {
+        width: 300px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+}
