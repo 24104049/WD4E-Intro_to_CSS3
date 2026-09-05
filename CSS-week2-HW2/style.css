@@ -1,1 +1,144 @@
 
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f4e79;
+    color: #ffffff;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+nav img {
+    width: 10%;
+}
+
+/* Existing li styling commented out for Homework 2 */
+/*
+nav li {
+    display: inline-block;
+    width: 150px;
+    margin: 5px;
+}
+*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+main {
+    background-color: #ffffff;
+    color: #000000;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+main img {
+    width: 850px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 15px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+
+    nav {
+        width: 100%;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+}
