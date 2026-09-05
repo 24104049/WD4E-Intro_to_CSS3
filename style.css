@@ -800,3 +800,96 @@ footer {
         width: calc(100% - 45px);
     }
 }
+/* ================= WAVE CONTRAST FIX ================= */
+
+/* Màu chữ xám đậm hơn để đủ tương phản */
+.breadcrumb {
+    color: #555555;
+}
+
+.source-note {
+    color: #555555;
+}
+
+.chat-box p {
+    color: #555555;
+}
+
+/* Đổi màu cam sáng sang cam đậm */
+.top-bar a:hover,
+nav a:hover,
+.breadcrumb a:hover,
+.news a:hover {
+    color: #9b3d0b;
+}
+
+/* Tiêu đề / đường viền cam */
+.section-title::after,
+.side-title::after {
+    background: #9b3d0b;
+}
+
+/* Ngày đăng */
+.date {
+    color: #9b3d0b;
+    border-left-color: #9b3d0b;
+}
+
+/* Viền các ô */
+.highlight {
+    border-top-color: #9b3d0b;
+}
+
+/* Số thứ tự phương thức */
+.method-number {
+    background: #9b3d0b;
+    color: #ffffff;
+}
+
+/* Scholarship */
+.scholarship {
+    border-left-color: #9b3d0b;
+}
+
+/* Menu sidebar */
+.category a:hover,
+.category .active {
+    background: #9b3d0b;
+    color: #ffffff;
+}
+
+/* Giữ chữ trắng trên nền xanh/cam */
+.top-bar,
+.top-bar a,
+.method-number,
+.category .active,
+.category a:hover,
+th {
+    color: #ffffff;
+}
+
+/* Các link xanh đậm hơn */
+nav a {
+    color: #152f68;
+}
+
+article h2,
+article strong,
+.highlight strong,
+.method h3,
+.formula,
+.contact-box h3 {
+    color: #1f3f7a;
+}
+
+/* Chat */
+.close-chat {
+    background: #555555;
+    color: #ffffff;
+}
+
+/* Không dùng xám quá nhạt cho chữ */
+.news a,
+.category a {
+    color: #333333;
+}
